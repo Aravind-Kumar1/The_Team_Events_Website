@@ -1,0 +1,155 @@
+/* Modern Sticky Header Design */
+.logo-btn {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 16px 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px;
+}
+
+/* Logo Styling */
+.logo h2 {
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo h2:hover {
+    color: #ff6b6b;
+}
+
+/* Centered Navigation Links */
+.nav-container {
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
+}
+
+.nav-links {
+    display: flex;
+    gap: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Underline effect on hover and active */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 60%; /* Reduce width of underline */
+    height: 3px; /* Make the underline thinner */
+    background-color: #ff6b6b;
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after, .nav-links a.active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Login & Signup Buttons */
+.auth-buttons {
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth-buttons button {
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.signup-btn {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #f0f0f0;
+    color: #ff6b6b;
+    transform: scale(1.05);
+}
+
+.signup-btn:hover {
+    background-color: #e63946;
+    transform: scale(1.05);
+}
+
+/* User Info Styling */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.wave {
+    font-size: 22px;
+    animation: wave-animation 1s infinite alternate;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(15deg); }
+}
+
+.username {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ff6b6b;
+}

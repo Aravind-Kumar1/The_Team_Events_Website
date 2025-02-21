@@ -1,0 +1,110 @@
+/* Gallery Section */
+.gallery-showcase {
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.gallery-showcase h2 {
+  font-size: 2.5rem;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.gallery-intro {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.showcase-item {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.showcase-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.showcase-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.showcase-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Unique Overlay Effect */
+.highlight-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.showcase-item:hover .highlight-overlay {
+  opacity: 1;
+}
+
+/* Centering the Text in Overlay */
+.highlight-overlay span {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.showcase-item:hover .highlight-overlay span {
+  opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .showcase-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-showcase h2 {
+      font-size: 2rem;
+  }
+}

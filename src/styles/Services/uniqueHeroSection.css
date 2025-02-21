@@ -1,0 +1,142 @@
+/* Reset & Full-Page Fit */
+body{
+    overflow-x: hidden;
+}
+/* Hero Section */
+.unique-hero-section {
+    margin-top: -10px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Background Video Wrapper */
+.unique-video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Full-Fit Video */
+.unique-hero-video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;  /* Ensures full screen without distortion */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hero Content */
+.unique-hero-content {
+    margin-left: -100px;
+    position: relative;
+    z-index: 10;
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* Title */
+.unique-hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+}
+
+.unique-hero-title span {
+    color: #ffcc00;
+}
+
+/* Subtitle */
+.unique-hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.unique-hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Primary Button */
+.btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Gradient Button */
+.btn-primary-s-h {
+    background: linear-gradient(90deg, #ffcc00, #ff8800);
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 136, 0, 0.5);
+}
+
+.btn-primary-s-h:hover {
+    background: linear-gradient(90deg, #ff8800, #ffcc00);
+    transform: scale(1.05);
+}
+
+/* Outline Button */
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+.fade-in-effect {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .unique-hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .unique-hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

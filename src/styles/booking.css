@@ -1,0 +1,135 @@
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.booking-container {
+  max-width: 850px; /* Container width */
+  margin: 20px auto;
+  padding: 35px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.booking-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+}
+
+.booking-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Two-column layout */
+.form-columns {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Equal width for both columns */
+.form-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label-Input Alignment */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Inputs and Textareas */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+  font-size: 13px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-columns {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .form-column {
+      width: 100%;
+  }
+}
+.login-warning-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login-warning {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+}
+
+.warning-icon {
+  font-size: 28px;
+  margin-right: 15px;
+}

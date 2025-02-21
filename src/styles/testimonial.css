@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+  overflow-x: hidden;
+  
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  background: #F5F7FA; /* Light Gray Background */
+  width: 100%;
+  margin: auto;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Section Heading */
+.section-title-test {
+  font-size: 38px;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 10px;
+  position: relative; /* ✅ This ensures the pseudo-element is positioned correctly */
+  display: inline-block; /* ✅ Ensures the underline fits the text width */
+}
+
+.section-title-test::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: #ff5733; /* Stylish underline */
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%); /* ✅ Centers the underline */
+  border-radius: 5px;
+}
+
+/* Tagline */
+.section-subtitle-test {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF; /* White Card */
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08); /* Soft Shadow */
+  transition: transform 0.3s ease-in-out;
+  max-width: 900px;
+  margin: 0 auto 5px;
+}
+
+/* Remove Hover Effect */
+.testimonial-card:hover {
+  transform: none;
+}
+
+/* Testimonial Image */
+.testimonial-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0052CC; /* Professional Blue */
+  margin-right: 20px;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+  flex: 1;
+  margin-left: 40px;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Testimonial Name */
+.testimonial-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+/* Testimonial Role */
+.testimonial-role {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-prev, 
+.swiper-button-next {
+  color: #0052CC; /* Soft Blue */
+}
+
+/* Adjust Navigation Position */
+.swiper-button-prev {
+  left: 135px;
+}
+
+.swiper-button-next {
+  right: 150px;
+}

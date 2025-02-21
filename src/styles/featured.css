@@ -1,0 +1,102 @@
+/* 🌟 Featured Services Section */
+.featured-section {
+  padding: 80px 20px;
+  background: #fff; /* Clean and elegant white background */
+  text-align: center;
+}
+
+/* 🔥 Section Heading */
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.section-title-fea {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #000000;
+}
+
+.section-title-fea::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: #ff5733;
+  bottom: -5px;
+  left: 25%;
+  border-radius: 5px;
+}
+
+.section-subtitle-fea {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* 🔹 Services Container */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 🏆 Individual Service Cards */
+.service-card {
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 🌟 Icon Styling */
+.icon {
+  color: #ff5733;
+  margin-bottom: 10px;
+}
+
+/* 🔠 Service Title */
+.service-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 📝 Service Description */
+.service-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 900px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row for tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .services-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column per row for mobile */
+  }
+}

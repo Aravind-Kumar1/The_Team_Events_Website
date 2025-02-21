@@ -1,0 +1,185 @@
+/* About Section Styling */
+.about-section {
+  padding: 130px 20px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  
+
+  /* linear-gradient(135deg, #3b5998, #8b9dc3); */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  box-sizing: border-box;
+  position: relative;
+  flex-direction: column;
+  text-align: center; /* Center the content for the heading */
+}
+
+/* Section Heading Styling */
+.section-heading {
+  margin-top: 10px; /* Space between heading and content */
+}
+
+.section-title-a {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-a::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  background-color: #ffd700; /* Golden underline for richness */
+  bottom: 0;
+  left: 15%;
+  border-radius: 5px;
+}
+.section-subtitle-a{
+  margin-top: 18px;
+  color: #ffffff;
+}
+/* About Content Flexbox */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* About Image Styling */
+.about-image {
+  flex: 1;
+  max-width: 45%;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image:hover .about-img {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+/* About Text Styling */
+.about-text {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+  animation: fadeIn 1s ease-out; /* Fade-in effect for text */
+}
+
+/* Text Card Design */
+.text-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  max-width: 90%;
+  margin: 0 auto;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-card:hover {
+  /* transform: translateY(-8px); */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Description Styling */
+.about-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* Button Styling */
+.about-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px; /* Fully rounded button */
+  border: none;
+  background-color: #ffd700;
+  color: #070000;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-btn:hover {
+  background-color: #cc9a00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* New Button for "Meet Our Team" */
+.meet-team-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  margin-left: 15px;
+  background-color: #4CAF50; /* Green color for the team button */
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.meet-team-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    max-width: 90%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

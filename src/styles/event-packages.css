@@ -1,0 +1,192 @@
+/* 🌟 Professional Event Packages Styling */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #333;
+}
+
+/* 🔥 Background & Layout */
+.packages-section {
+  padding: 100px 20px;
+  background: #F5F7FA;
+  text-align: center;
+}
+
+/* ✨ Heading Styling */
+.section-heading {
+  margin-bottom: 50px;
+}
+
+.section-title-p {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    display: inline-block;
+    color: #000000; /* Previous color retained */
+}
+
+.section-title-p::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: #ff5733; /* Stylish underline */
+    bottom: -5px;
+    left: 25%;
+    border-radius: 5px;
+}
+.section-subtitle-p{
+    margin-top: 18;
+}
+.section-subtitle {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+/* 🔥 Package Cards */
+.packages-container {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.package-card {
+    width: 360px;
+    background: #fff; /* Warm cream color for a premium look */
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+
+.package-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎨 Tier Borders */
+/* .basic {
+  border: 4px solid #ff6b6b;
+}
+
+.standard {
+  border: 4px solid #ff9f43;
+}
+
+.premium {
+  border: 4px solid #e63946;
+} */
+
+/* 🖼️ Image Styling */
+.package-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* 📌 Content Styling */
+.package-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: -15px;
+}
+
+.package-title {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Poppins';
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.package-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* ✅ Features List */
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90px; /* Aligns lists evenly */
+}
+
+.package-features .feature-item {
+  font-size: 15px;
+  color: #444;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 15px;
+}
+
+/* 🚀 CTA Button */
+.cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.cta-button {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #ff4d4d, #ff7e3f);
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(255, 77, 77, 0.4);
+}
+/* ✅ Features List */
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90px; /* Aligns lists evenly */
+  gap: 12px; /* Added vertical spacing */
+}
+
+.package-features .feature-item {
+  font-size: 15px;
+  color: #444;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
