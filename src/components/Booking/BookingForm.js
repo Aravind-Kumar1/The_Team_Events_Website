@@ -105,6 +105,8 @@ export default function BookingForm() {
                     <option value="Wedding">Wedding</option>
                     <option value="Corporate Event">Corporate Event</option>
                     <option value="House Party">House Party</option>
+        <option value="Music Concert">Music Concert</option>
+        <option value="Destination Wedding">Destination Wedding</option>
                   </select>
                 </div>
                 <div className="form-group">

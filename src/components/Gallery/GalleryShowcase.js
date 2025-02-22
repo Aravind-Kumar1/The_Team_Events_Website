@@ -4,16 +4,13 @@ export default function GalleryShowcase() {
   const events = [
     { id: 1, title: 'Birthday Party', image: '/images/bir.jpg' },
     { id: 2, title: 'Wedding', image: '/images/ma.jpg' },
-    { id: 3, title: 'Corporate Event', image: '/images/ma.jpg' },
-    { id: 4, title: 'House Party', image: '/images/ma.jpg' },
-    { id: 5, title: 'Anniversary', image: '/images/ma.jpg' },
-    { id: 6, title: 'Product Launch', image: '/images/ma.jpg' },
-    { id: 7, title: 'Charity Gala', image: '/images/ma.jpg' },
-    { id: 8, title: 'Concert', image: '/images/ma.jpg' },
-    { id: 9, title: 'Fashion Show', image: '/images/ma.jpg' },
-    { id: 10, title: 'Tech Conference', image: '/images/ma.jpg' },
-    { id: 9, title: 'Fashion Show', image: '/images/ma.jpg' },
-    { id: 10, title: 'Tech Conference', image: '/images/ma.jpg' },
+    { id: 3, title: 'Corporate Event', image: '/images/cor.jpg' },
+    { id: 4, title: 'House Party', image: '/images/house.jpg' },
+    { id: 5, title: 'Anniversary', image: '/images/anni.jpg' },
+    { id: 6, title: 'Product Launch', image: '/images/pro.jpg' },
+    { id: 7, title: 'Charity Gala', image: '/images/cha.jpg' },
+    { id: 8, title: 'Concert', image: '/images/cons.jpg' },
+ 
   ];
 
   return (

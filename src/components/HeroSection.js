@@ -1,9 +1,17 @@
 import { useRouter } from "next/router";
-import Link from "next/link"; // Import Link from Next.js
-import "../styles/herosection.css"; // Importing custom CSS
+import Link from "next/link";
+import Image from "next/image"; // Import Next.js Image
+import "../styles/herosection.css";
 
 export default function HeroSection() {
-  const router = useRouter(); // Initialize router
+  const router = useRouter();
+
+  const heroImages = [
+    { src: "/images/bir.jpg", alt: "Birthday Event", delay: "0.2s" },
+    { src: "/images/ma.jpg", alt: "Marriage Event", delay: "0.4s" },
+    { src: "/images/hou.jpg", alt: "House Party", delay: "0.6s" },
+    { src: "/images/ch.jpg", alt: "Corporate Event", delay: "0.8s" }
+  ];
 
   return (
     <div className="hero-section">
@@ -16,7 +24,7 @@ export default function HeroSection() {
           </h1>
           <p className="tagline">Your Perfect Event Awaits!</p>
           <p className="sub-tagline">Discover, Plan, and Celebrate – It's That Easy!</p>
-          
+
           <div className="hero-buttons">
             {/* Button to navigate to the Booking page */}
             <Link href="/booking" className="book-event-btn">
@@ -25,25 +33,24 @@ export default function HeroSection() {
 
             {/* Learn More Button */}
             <button className="learn-more-btn">Learn More</button>
-
-            {/* Link to the About page with active class */}
-           
           </div>
         </div>
 
+        {/* Optimized Hero Images */}
         <div className="hero-images">
-          <div className="hero-image" style={{ animationDelay: "0.2s" }}>
-            <img src="/images/bir.jpg" alt="Event 1" />
-          </div>
-          <div className="hero-image" style={{ animationDelay: "0.4s" }}>
-            <img src="/images/ma.jpg" alt="Event 2" />
-          </div>
-          <div className="hero-image" style={{ animationDelay: "0.6s" }}>
-            <img src="/images/hou.jpg" alt="Event 3" />
-          </div>
-          <div className="hero-image" style={{ animationDelay: "0.8s" }}>
-            <img src="/images/ch.jpg" alt="Event 4" />
-          </div>
+          {heroImages.map((image, index) => (
+            <div className="hero-image" key={index} style={{ animationDelay: image.delay }}>
+              <Image 
+                src={image.src} 
+                alt={image.alt} 
+                width={300} 
+                height={200} 
+                className="event-image"
+                priority={index === 0} //  Only first image gets priority
+                loading={index === 0 ? "eager" : "lazy"} //  Others lazy load
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

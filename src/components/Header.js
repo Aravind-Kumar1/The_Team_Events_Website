@@ -8,32 +8,35 @@ export default function Header() {
   const { isSignedIn, user } = useUser();
   const router = useRouter(); // Get current route
 
+  // Scroll to Contact Section if on Home Page
+  const handleContactClick = (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    if (router.pathname === "/") {
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push("/#contact"); // Navigate to home and scroll
+    }
+  };
+
   return (
     <header className="header">
       <div className="logo">
-        <a href="#">
-          <h2 className="logo-btn">The-Team-Events</h2>
-        </a>
+        {/* ✅ Fixed Logo Navigation */}
+        <Link href="/">
+          <h2 className="logo-btn" style={{ cursor: "pointer" }}>The-Team-Events</h2>
+        </Link>
       </div>
 
       {/* Centered Navigation Links */}
       <div className="nav-container">
         <nav className="nav-links">
-          <Link href="/" className={router.pathname === "/" ? "active" : ""}>
-            Home
-          </Link>
-          <Link href="/about" className={router.pathname === "/about" ? "active" : ""}>
-            About
-          </Link>
-          <Link href="/services" className={router.pathname === "/services" ? "active" : ""}>
-            Services
-          </Link>
-          <Link href="/gallery" className={router.pathname === "/gallery" ? "active" : ""}>
-            Gallery
-          </Link>
-          <Link href="/contact" className={router.pathname === "/contact" ? "active" : ""}>
+          <Link href="/" className={router.pathname === "/" ? "active" : ""}>Home</Link>
+          <Link href="/about" className={router.pathname === "/about" ? "active" : ""}>About</Link>
+          <Link href="/services" className={router.pathname === "/services" ? "active" : ""}>Services</Link>
+          <Link href="/gallery" className={router.pathname === "/gallery" ? "active" : ""}>Gallery</Link>
+          <a href="#contact" onClick={handleContactClick} className={router.pathname === "/contact" ? "active" : ""}>
             Contact
-          </Link>
+          </a>
         </nav>
       </div>
 

@@ -1,5 +1,6 @@
 import "../../styles/About/missionvision.css";
 import "../../styles/global.css";
+import Image from "next/image";
 
 export default function MissionVision() {
   return (
@@ -11,7 +12,13 @@ export default function MissionVision() {
       <div className="mission-vision-container">
         {/* Left Side - Image */}
         <div className="mission-vision-image">
-          <img src="/images/deco.jpg" alt="Mission & Vision" />
+        <Image 
+  src="/images/dis.png" 
+  alt="Event Services" 
+  width={500} 
+  height={300} 
+  priority // Loads this image faster 
+/>
         </div>
 
         {/* Right Side - Text Content */}

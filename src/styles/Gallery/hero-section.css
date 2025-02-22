@@ -59,6 +59,7 @@
   }
   
   .gallery-cta-button {
+    border: 2px solid white;
     background-color: #ff6f61;
     padding: 12px 24px;
     font-size: 1.2rem;

@@ -1,5 +1,6 @@
-import "../styles/event-packages.css"; // Updated CSS file
-import { FaCheckCircle, FaCamera, FaMusic, FaStar, FaCrown, FaUtensils, FaChair, FaPaintBrush, FaUserTie } from "react-icons/fa";
+import Image from "next/image"; // ✅ Import Next.js Image component
+import "../styles/event-packages.css";
+import { FaCamera, FaMusic, FaStar, FaCrown, FaUtensils, FaChair, FaPaintBrush, FaUserTie } from "react-icons/fa";
 
 export default function EventPackages() {
   const packages = [
@@ -12,7 +13,7 @@ export default function EventPackages() {
         { text: "Standard catering", icon: <FaUtensils /> },
         { text: "Basic seating", icon: <FaChair /> },
       ],
-      image: "./images/basic.jpg",
+      image: "/images/basic.jpg", // ✅ Use absolute paths
     },
     {
       tier: "Standard",
@@ -23,7 +24,7 @@ export default function EventPackages() {
         { text: "Professional photography", icon: <FaCamera /> },
         { text: "Live entertainment", icon: <FaMusic /> },
       ],
-      image: "./images/stan.jpg",
+      image: "/images/stan.jpg",
     },
     {
       tier: "Premium",
@@ -34,7 +35,7 @@ export default function EventPackages() {
         { text: "Celebrity hosts", icon: <FaUserTie /> },
         { text: "Exclusive dining", icon: <FaCrown /> },
       ],
-      image: "./images/rich.jpg",
+      image: "/images/rich.jpg",
     },
   ];
 
@@ -50,7 +51,16 @@ export default function EventPackages() {
         {packages.map((pkg, index) => (
           <div key={index} className={`package-card ${pkg.tier.toLowerCase()}`}>
             <div className="package-image">
-              <img src={pkg.image} alt={pkg.title} />
+              {/* ✅ Next.js Optimized Image */}
+              <Image 
+                src={pkg.image} 
+                alt={pkg.title} 
+                width={400} // ✅ Set appropriate width
+                height={250} // ✅ Set appropriate height
+                className="event-image"
+                priority={index === 0} // ✅ First image loads fast
+                loading={index === 0 ? "eager" : "lazy"} // ✅ Others lazy load
+              />
             </div>
             <div className="package-content">
               <h3 className="package-title">{pkg.title}</h3>

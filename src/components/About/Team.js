@@ -1,15 +1,16 @@
+import Image from "next/image"; 
 import "../../styles/About/team.css";
 import "../../styles/global.css";
 
 const teamMembers = [
-  { name: "John Doe", role: "Founder & CEO", img: "/images/HeroImage.png" },
-  { name: "Jane Smith", role: "Event Manager", img: "/images/HeroImage.png" },
-  { name: "Michael Johnson", role: "Creative Director", img:"/images/HeroImage.png" },
-  { name: "Emily Brown", role: "Marketing Head", img: "/images/HeroImage.png" },
-  { name: "David Wilson", role: "Operations Manager", img: "/images/HeroImage.png" },
-  { name: "Sophia Martinez", role: "Client Relations", img: "/images/HeroImage.png" },
-  { name: "David Wilson", role: "Operations Manager", img: "/images/HeroImage.png" },
-  { name: "Sophia Martinez", role: "Client Relations", img: "/images/HeroImage.png" },
+  { name: "Shiva Kumar", role: "Founder & CEO", img: "/images/lead.jpg" },
+  { name: "Jane Smith", role: "Event Manager", img: "/images/lead.jpg" },
+  { name: "Michael Johnson", role: "Creative Director", img: "/images/lead.jpg" },
+  { name: "Emily Brown", role: "Marketing Head", img: "/images/lead.jpg" },
+  { name: "David Wilson", role: "Operations Manager", img: "/images/lead.jpg" },
+  { name: "Sophia Martinez", role: "Client Relations", img: "/images/lead.jpg" },
+  { name: "David Wilson", role: "Operations Manager", img: "/images/lead.jpg" },
+  { name: "Sophia Martinez", role: "Client Relations", img: "/images/lead.jpg" },
 ];
 
 export default function Team() {
@@ -18,14 +19,22 @@ export default function Team() {
       <div className="team-container">
         <h2 className="team-heading">Meet Our Visionary Team</h2>
         <p className="team-tagline">
-          Crafting **Unforgettable Experiences** with Passion & Expertise.  
+          Crafting <strong>Unforgettable Experiences</strong> with Passion & Expertise.
         </p>
 
         <div className="team-grid">
           {teamMembers.map((member, index) => (
             <div key={index} className="team-card">
               <div className="team-img-wrapper">
-                <img src={member.img} alt={member.name} className="team-img" />
+                {/* ✅ Uses Next.js <Image> for optimization */}
+                <Image 
+                  src={member.img} 
+                  alt={`Photo of ${member.name}, ${member.role}`} 
+                  width={200} 
+                  height={200} 
+                  className="team-img"
+                  loading="lazy" // Lazy loads images
+                />
               </div>
               <div className="team-info">
                 <h3 className="team-member-name">{member.name}</h3>
