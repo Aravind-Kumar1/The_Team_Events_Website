@@ -1,5 +1,5 @@
 import { Calendar, Mic, UtensilsCrossed, PartyPopper, Users, Briefcase } from "lucide-react";
-import "../styles/featured.css";
+
 
 export default function FeaturedServices() {
   const services = [

@@ -1,4 +1,4 @@
-import "../styles/aboutsec.css"; // Importing custom CSS
+ // Importing custom CSS
 export default function AboutSection() {
   return (
     <section id="about" className="about-section">

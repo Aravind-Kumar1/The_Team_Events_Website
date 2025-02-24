@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image"; // Import Next.js Image
-import "../styles/herosection.css";
+
 
 export default function HeroSection() {
   const router = useRouter();

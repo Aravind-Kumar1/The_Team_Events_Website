@@ -1,5 +1,5 @@
 import Image from "next/image"; // ✅ Import Next.js Image component
-import "../styles/event-packages.css";
+
 import { FaCamera, FaMusic, FaStar, FaCrown, FaUtensils, FaChair, FaPaintBrush, FaUserTie } from "react-icons/fa";
 
 export default function EventPackages() {

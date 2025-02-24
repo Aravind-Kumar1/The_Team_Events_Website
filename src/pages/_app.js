@@ -13,9 +13,16 @@ import "../styles/Services/packages.css";
 import "../styles/Services/services.css";
 import "../styles/Services/uniqueHeroSection.css";
 import "../styles/Services/whychooseus.css";
-
+import "../styles/aboutsec.css";
+import "../styles/contactus.css";
+import "../styles/event-packages.css";
+import "../styles/faqsection.css"; 
+import "../styles/featured.css";
 import "../styles/booking.css";
-
+import "../styles/footer.css";
+import "../styles/header.css";
+import "../styles/herosection.css";
+import "../styles/testimonial.css";
 const clerkKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
 export default function MyApp({ Component, pageProps }) {

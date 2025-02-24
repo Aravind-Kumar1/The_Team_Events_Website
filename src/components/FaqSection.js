@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../styles/faqsection.css"; 
+
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState(null);

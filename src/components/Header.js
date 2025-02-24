@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { SignInButton, SignUpButton, UserButton, useUser } from "@clerk/nextjs";
-import "../styles/header.css";
+
 
 
 export default function Header() {
