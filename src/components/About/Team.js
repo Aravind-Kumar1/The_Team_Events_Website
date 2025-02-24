@@ -1,6 +1,6 @@
 import Image from "next/image"; 
 import "../../styles/About/team.css";
-import "../../styles/global.css";
+
 
 const teamMembers = [
   { name: "Shiva Kumar", role: "Founder & CEO", img: "/images/lead.jpg" },

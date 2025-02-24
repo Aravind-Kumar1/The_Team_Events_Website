@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
 import { useUser } from "@clerk/clerk-react";
 import "../../styles/booking.css";
-import "../../styles/global.css";
+
 import {
   FaUser, FaEnvelope, FaPhone, FaCalendarAlt, FaUsers, FaComment,
   FaMapMarkerAlt, FaBuilding, FaClock

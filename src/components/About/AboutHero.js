@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import "../../styles/About/abouthero.css";
-import "../../styles/global.css";
+
 
 export default function AboutHero() {
   return (

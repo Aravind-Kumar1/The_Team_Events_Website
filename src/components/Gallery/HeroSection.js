@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router"; // Import Next.js router
 import "../../styles/Gallery/hero-section.css";
-import "../../styles/global.css";
+
 
 const slides = [
   {

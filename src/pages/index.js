@@ -8,6 +8,7 @@ import EventPackages from "@/components/EventPackages";
 import Testimonials from "@/components/TestimonialSection";
 import ContactUs from "@/components/ContactUs";
 import FaqSection from "@/components/FaqSection";
+import "../styles/global.css";
 
 export default function Home() {
   return (
