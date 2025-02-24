@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../../styles/Gallery/videohighlights.css";
 
 export default function VideoHighlights() {
   const [selectedVideo, setSelectedVideo] = useState(null);

@@ -1,4 +1,4 @@
-import "../../styles/Gallery/galleryshowcase.css";
+
 
 export default function GalleryShowcase() {
   const events = [

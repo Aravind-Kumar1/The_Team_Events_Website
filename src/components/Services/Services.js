@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image"; // Optimized image handling
 import { motion } from "framer-motion";
-import "../../styles/Services/services.css";
+
 
 export default function Services() {
   const services = [

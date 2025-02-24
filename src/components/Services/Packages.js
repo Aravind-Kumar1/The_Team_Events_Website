@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image"; // Optimized image handling
 import Link from "next/link";
-import "../../styles/Services/packages.css";
+
 
 const packagesData = [
   {

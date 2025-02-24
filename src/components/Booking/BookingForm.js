@@ -3,7 +3,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
 import { useUser } from "@clerk/clerk-react";
-import "../../styles/booking.css";
+
 
 import {
   FaUser, FaEnvelope, FaPhone, FaCalendarAlt, FaUsers, FaComment,

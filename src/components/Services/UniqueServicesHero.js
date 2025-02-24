@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-import "../../styles/Services/uniqueHeroSection.css";
+
 
 export default function UniqueServicesHero() {
   const [isLoaded, setIsLoaded] = useState(false);

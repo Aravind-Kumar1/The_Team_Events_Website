@@ -1,5 +1,4 @@
 import { ShieldCheck, Clock, DollarSign, Users } from "lucide-react";
-import "../../styles/Services/whychooseus.css";
 
 export default function WhyChooseUs() {
   const benefits = [

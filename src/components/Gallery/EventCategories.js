@@ -1,4 +1,4 @@
-import "../../styles/Gallery/event-categories.css";
+
 
 export default function EventCategories() {
   const events = [
