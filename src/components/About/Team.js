@@ -1,5 +1,5 @@
 import Image from "next/image"; 
-import "../../styles/About/team.css";
+
 
 
 const teamMembers = [
