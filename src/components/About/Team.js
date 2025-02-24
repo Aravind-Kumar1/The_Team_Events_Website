@@ -1,14 +1,10 @@
 import Image from "next/image"; 
 
-
-
 const teamMembers = [
   { name: "Shiva Kumar", role: "Founder & CEO", img: "/images/lead.jpg" },
   { name: "Jane Smith", role: "Event Manager", img: "/images/lead.jpg" },
   { name: "Michael Johnson", role: "Creative Director", img: "/images/lead.jpg" },
   { name: "Emily Brown", role: "Marketing Head", img: "/images/lead.jpg" },
-  { name: "David Wilson", role: "Operations Manager", img: "/images/lead.jpg" },
-  { name: "Sophia Martinez", role: "Client Relations", img: "/images/lead.jpg" },
   { name: "David Wilson", role: "Operations Manager", img: "/images/lead.jpg" },
   { name: "Sophia Martinez", role: "Client Relations", img: "/images/lead.jpg" },
 ];
@@ -33,7 +29,7 @@ export default function Team() {
                   width={200} 
                   height={200} 
                   className="team-img"
-                  loading="lazy" // Lazy loads images
+                  loading="lazy" // ✅ Fix Comment Issue
                 />
               </div>
               <div className="team-info">

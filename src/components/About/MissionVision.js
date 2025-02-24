@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 export default function MissionVision() {
@@ -11,13 +10,13 @@ export default function MissionVision() {
       <div className="mission-vision-container">
         {/* Left Side - Image */}
         <div className="mission-vision-image">
-        <Image 
-  src="/images/dis.png" 
-  alt="Event Services" 
-  width={500} 
-  height={300} 
-  priority // Loads this image faster 
-/>
+          <Image 
+            src="/images/dis.png" 
+            alt="Event Services" 
+            width={500} 
+            height={300} 
+            priority // ✅ Fix Comment Issue
+          />
         </div>
 
         {/* Right Side - Text Content */}

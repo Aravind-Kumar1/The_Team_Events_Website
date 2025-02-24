@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-
-
 export default function AboutHero() {
   return (
     <section className="about-hero-section">
@@ -20,13 +18,13 @@ export default function AboutHero() {
           </Link>
         </div>
         <div className="about-hero-image">
-        <Image 
-  src="/images/team.jpg" 
-  alt="Event Services" 
-  width={500} 
-  height={300} 
-  priority // Loads this image faster 
-/>
+          <Image 
+            src="/images/team.jpg" 
+            alt="Event Services" 
+            width={500} 
+            height={300} 
+            priority // ✅ Fix Comment Issue
+          />
         </div>
       </div>
     </section>
